@@ -1,0 +1,5 @@
+ultralytics==8.0.0  # YOLOv8 library
+opencv-python==4.9.0.80  # Image processing
+numpy==1.26.4  # Numerical operations
+RPi.GPIO==0.7.1  # Raspberry Pi GPIO control
+pyserial==3.5  # Serial communication (e.g., for Bluetooth)
