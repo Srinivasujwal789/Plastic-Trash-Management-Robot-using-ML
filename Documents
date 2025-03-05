@@ -1,0 +1,36 @@
+ #Hardware Components
+1. Raspberry Pi 4 (4GB recommended)
+2. Raspberry Pi Camera Module v2
+3. DC Motors (x2) with Wheels
+4. L298N Motor Driver Module
+5. Breadboard and Jumper Wires
+6. Power Supply (5V for Pi, 6-12V for motors)
+7. Chassis for Robot (e.g., 2WD robot kit)
+
+# Software Components
+1. Python 3.9+
+2. Ultralytics YOLOv8 (`pip install ultralytics`)
+3. OpenCV (`pip install opencv-python`)
+4. RPi.GPIO (`pip install RPi.GPIO`)
+5. NumPy (`pip install numpy`)
+6. Raspberry Pi OS
+
+# Circuit Diagram Description
+1. Raspberry Pi 4
+   - Power via 5V micro-USB.
+2. Pi Camera Module
+   - Connect to the camera port on the Raspberry Pi.
+3. L298N Motor Driver
+   - IN1 -> GPIO 17
+   - IN2 -> GPIO 18
+   - ENA -> GPIO 27 (PWM)
+   - IN3 -> GPIO 22
+   - IN4 -> GPIO 23
+   - ENB -> GPIO 24 (PWM)
+   - VCC -> 6-12V battery (motor power)
+   - GND -> Common ground with Raspberry Pi
+   - Motor 1 (Left) -> OUT1, OUT2
+   - Motor 2 (Right) -> OUT3, OUT4
+4. Power Supply
+   - 5V for Raspberry Pi
+   - Separate 6-12V battery for motors via L298N
